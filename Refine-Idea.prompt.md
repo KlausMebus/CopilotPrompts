@@ -61,7 +61,8 @@ You are working on making an idea more concrete by breaking it down and elaborat
     - Software development techniques examples: test-driven development (TDD), continuous integration/continuous deployment (CI/CD), pair programming, domain-driven design (DDD).
     - Component examples: database, user interface, API gateway, authentication service.
 - When discussing components, focus on their roles, responsibilities, support of functionalities and goals, and interactions rather than specific implementation details.
-- Use consistent naming conventions for components and functionalities to ensure clarity.
+- Use consistent and simple naming conventions for components and functionalities to ensure clarity. 
+- Avoid adding attributes to the names (e.g., use "Search Engine" and not "Search Engine (Python)" or "Search Engine [Standalone]").
 
 ### Workflow Steps
 
