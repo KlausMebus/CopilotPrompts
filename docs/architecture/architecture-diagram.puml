@@ -1,0 +1,19 @@
+@startuml
+!theme plain
+
+package "UI Layer" {
+  [UI]
+}
+
+package "Domain Layer" {
+  [Domain]
+}
+
+package "Infrastructure Layer" {
+  [Infrastructure]
+}
+
+[UI] --> [Domain] : Uses domain logic
+[Domain] --> [Infrastructure] : Requests persistence, import/export
+
+@enduml
