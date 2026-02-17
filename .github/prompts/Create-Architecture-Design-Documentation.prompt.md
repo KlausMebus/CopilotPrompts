@@ -9,7 +9,7 @@ tools: ['createFile', 'search', 'fetch']
 Create a complete architecture and design document for a software system using best-practice documentation standards.
 
 ## Instructions
-1. Gather context from the latest available project documents in the `docs` folder (for example `idea-xxxx.md`, `prd-xxxx.md`, `tech-principles-xxxx.md`, `plan-xxxx.md`, `tasklist-xxxx.md`).
+1. Gather context from the latest available project documents in the `docs` folder (for example `idea-xxxx.md`, `prd-xxxx.md`, `tech-principles-xxxx.md`, `plan-xxxx.md`, `tasklist-xxxx.md`), where "latest" means the highest numeric `xxxx` version.
 2. If critical details are missing, ask clarifying questions before finalizing.
 3. Produce a single Markdown document that is clear, concise, and maintainable.
 4. Use Mermaid diagrams for all required visual sections.
@@ -28,9 +28,10 @@ The document **must** include:
 - All diagrams must be Mermaid fenced blocks.
 - Focus on architectural clarity: boundaries, responsibilities, interfaces, and interactions.
 - Include assumptions and open questions when information is incomplete.
-- Save the document as `architecture-design-xxxx.md` (incrementing version number) in the `docs/architecture` folder.
+- Save the document as `architecture-design-xxxx.md` in the `docs/architecture` folder, where `xxxx` is the next sequential 4-digit version number based on the highest existing `architecture-design-xxxx.md` file (starting at `0001` if none exists).
+- Assume the architecture document is in `docs/architecture` when creating relative reference links (for example `../idea-xxxx.md`).
 - Include a timestamp at the end:
-  - `Created on: [Date] - [Time]`
+  - `Created on: [Date] - [Time]` using format `YYYY-MM-DD - HH:MM UTC` (24-hour)
 
 ## Strict Output Template
 ````markdown
@@ -110,6 +111,7 @@ flowchart TD
 - [prd-xxxx.md](../prd-xxxx.md)
 - [tech-principles-xxxx.md](../tech-principles-xxxx.md)
 - [plan-xxxx.md](../plan-xxxx.md)
+- [tasklist-xxxx.md](../tasklist-xxxx.md)
 
 ---
 Created on: [Date] - [Time]
